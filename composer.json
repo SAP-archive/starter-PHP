@@ -1,0 +1,19 @@
+{
+  "name": "recastai/starter-kit-php",
+  "description": "A bot built with Recast.AI",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Marian ANDRE",
+      "email": "marian.andre@recast.ai"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php" : ">=7.0",
+    "recastai/sdk-php": "^2.0",
+    "slim/slim": "^3.0",
+    "guzzlehttp/guzzle": "^6.2"
+  }
+}

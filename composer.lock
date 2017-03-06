@@ -1,0 +1,582 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "4fa78a9351e5071f66ff95807838aee7",
+    "packages": [
+        {
+            "name": "container-interop/container-interop",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/container-interop/container-interop.git",
+                "reference": "79cbf1341c22ec75643d841642dd5d6acd83bdb8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/container-interop/container-interop/zipball/79cbf1341c22ec75643d841642dd5d6acd83bdb8",
+                "reference": "79cbf1341c22ec75643d841642dd5d6acd83bdb8",
+                "shasum": ""
+            },
+            "require": {
+                "psr/container": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Interop\\Container\\": "src/Interop/Container/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
+            "homepage": "https://github.com/container-interop/container-interop",
+            "time": "2017-02-14T19:40:03+00:00"
+        },
+        {
+            "name": "guzzlehttp/guzzle",
+            "version": "6.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "8d6c6cc55186db87b7dc5009827429ba4e9dc006"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/8d6c6cc55186db87b7dc5009827429ba4e9dc006",
+                "reference": "8d6c6cc55186db87b7dc5009827429ba4e9dc006",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/promises": "^1.0",
+                "guzzlehttp/psr7": "^1.4",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "phpunit/phpunit": "^4.0",
+                "psr/log": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.2-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle is a PHP HTTP client library",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "time": "2017-02-28T22:50:30+00:00"
+        },
+        {
+            "name": "guzzlehttp/promises",
+            "version": "v1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/promises.git",
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle promises library",
+            "keywords": [
+                "promise"
+            ],
+            "time": "2016-12-20T10:07:11+00:00"
+        },
+        {
+            "name": "guzzlehttp/psr7",
+            "version": "1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "0d6c7ca039329247e4f0f8f8f6506810e8248855"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/0d6c7ca039329247e4f0f8f8f6506810e8248855",
+                "reference": "0d6c7ca039329247e4f0f8f8f6506810e8248855",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "homepage": "https://github.com/Tobion"
+                }
+            ],
+            "description": "PSR-7 message implementation that also provides common utility methods",
+            "keywords": [
+                "http",
+                "message",
+                "request",
+                "response",
+                "stream",
+                "uri",
+                "url"
+            ],
+            "time": "2017-02-27T10:51:17+00:00"
+        },
+        {
+            "name": "nikic/fast-route",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/FastRoute.git",
+                "reference": "b5f95749071c82a8e0f58586987627054400cdf6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/FastRoute/zipball/b5f95749071c82a8e0f58586987627054400cdf6",
+                "reference": "b5f95749071c82a8e0f58586987627054400cdf6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FastRoute\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Popov",
+                    "email": "nikic@php.net"
+                }
+            ],
+            "description": "Fast request router for PHP",
+            "keywords": [
+                "router",
+                "routing"
+            ],
+            "time": "2017-01-19T11:35:12+00:00"
+        },
+        {
+            "name": "pimple/pimple",
+            "version": "v3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silexphp/Pimple.git",
+                "reference": "a30f7d6e57565a2e1a316e1baf2a483f788b258a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silexphp/Pimple/zipball/a30f7d6e57565a2e1a316e1baf2a483f788b258a",
+                "reference": "a30f7d6e57565a2e1a316e1baf2a483f788b258a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Pimple": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Pimple, a simple Dependency Injection Container",
+            "homepage": "http://pimple.sensiolabs.org",
+            "keywords": [
+                "container",
+                "dependency injection"
+            ],
+            "time": "2015-09-11T15:10:35+00:00"
+        },
+        {
+            "name": "psr/container",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "time": "2017-02-14T16:28:37+00:00"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2016-08-06T14:39:51+00:00"
+        },
+        {
+            "name": "recastai/sdk-php",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RecastAI/SDK-PHP.git",
+                "reference": "9c98271f422c074360409a8d1ada112bedc910d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RecastAI/SDK-PHP/zipball/9c98271f422c074360409a8d1ada112bedc910d5",
+                "reference": "9c98271f422c074360409a8d1ada112bedc910d5",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.2@dev",
+                "php": "^5.3.3 || ^7.0",
+                "rmccue/requests": "^1.6.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "RecastAI\\": "src/",
+                    "Tests\\RecastAI\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bruno",
+                    "email": "bruno.gantelmi@recast.ai"
+                },
+                {
+                    "name": "Sylvain Jaune",
+                    "email": "sylvain@hellocare.com"
+                }
+            ],
+            "description": "The official PHP SDK Recast.ai",
+            "time": "2017-01-17T11:10:24+00:00"
+        },
+        {
+            "name": "rmccue/requests",
+            "version": "v1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rmccue/Requests.git",
+                "reference": "87932f52ffad70504d93f04f15690cf16a089546"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rmccue/Requests/zipball/87932f52ffad70504d93f04f15690cf16a089546",
+                "reference": "87932f52ffad70504d93f04f15690cf16a089546",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2"
+            },
+            "require-dev": {
+                "requests/test-server": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Requests": "library/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "ISC"
+            ],
+            "authors": [
+                {
+                    "name": "Ryan McCue",
+                    "homepage": "http://ryanmccue.info"
+                }
+            ],
+            "description": "A HTTP library written in PHP, for human beings.",
+            "homepage": "http://github.com/rmccue/Requests",
+            "keywords": [
+                "curl",
+                "fsockopen",
+                "http",
+                "idna",
+                "ipv6",
+                "iri",
+                "sockets"
+            ],
+            "time": "2016-10-13T00:11:37+00:00"
+        },
+        {
+            "name": "slim/slim",
+            "version": "3.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/slimphp/Slim.git",
+                "reference": "4254e40d81559e35cdf856bcbaca5f3af468b7ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/slimphp/Slim/zipball/4254e40d81559e35cdf856bcbaca5f3af468b7ef",
+                "reference": "4254e40d81559e35cdf856bcbaca5f3af468b7ef",
+                "shasum": ""
+            },
+            "require": {
+                "container-interop/container-interop": "^1.1",
+                "nikic/fast-route": "^1.0",
+                "php": ">=5.5.0",
+                "pimple/pimple": "^3.0",
+                "psr/http-message": "^1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0",
+                "squizlabs/php_codesniffer": "^2.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Slim\\": "Slim"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rob Allen",
+                    "email": "rob@akrabat.com",
+                    "homepage": "http://akrabat.com"
+                },
+                {
+                    "name": "Josh Lockhart",
+                    "email": "hello@joshlockhart.com",
+                    "homepage": "https://joshlockhart.com"
+                },
+                {
+                    "name": "Gabriel Manricks",
+                    "email": "gmanricks@me.com",
+                    "homepage": "http://gabrielmanricks.com"
+                },
+                {
+                    "name": "Andrew Smith",
+                    "email": "a.smith@silentworks.co.uk",
+                    "homepage": "http://silentworks.co.uk"
+                }
+            ],
+            "description": "Slim is a PHP micro framework that helps you quickly write simple yet powerful web applications and APIs",
+            "homepage": "https://slimframework.com",
+            "keywords": [
+                "api",
+                "framework",
+                "micro",
+                "router"
+            ],
+            "time": "2016-12-20T20:30:47+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=7.0"
+    },
+    "platform-dev": []
+}
