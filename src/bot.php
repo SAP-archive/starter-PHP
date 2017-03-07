@@ -18,9 +18,9 @@ function bot ($request, $response) {
   /*
   * Instantiate Recast.AI SDK, just for connect service
   */
-  $connect = new RecastAI\Client($config['recast']['token'], $config['recast']['language']);
+  $connect = new RecastAI\Connect($config['recast']['token'], $config['recast']['language']);
 
-  // $connect->connect->handleMessage($request, $response, 'replyMessage');
+  $connect->connect->handleMessage($request, $response, 'replyMessage');
 
   return $response;
 }
