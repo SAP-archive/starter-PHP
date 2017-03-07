@@ -13,14 +13,16 @@ require_once 'message.php';
 
 /*
  * Main bot function
+ * It takes body of the request
+ * And optionally, the response object of your server
  */
-function bot ($request, $response) {
+function bot ($body, $response = NULL) {
   /*
   * Instantiate Recast.AI SDK, just for connect service
   */
   $connect = new RecastAI\Connect($config['recast']['token'], $config['recast']['language']);
 
-  $connect->connect->handleMessage($request, $response, 'replyMessage');
+  $connect->connect->handleMessage(['body' => $body], $response ? $response : [], 'replyMessage');
 
   return $response;
 }

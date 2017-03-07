@@ -31,7 +31,7 @@ $app = new \Slim\App();
  * Handle / route
  */
 $app->get('/', function ($request, $response) {
-  return bot($request, $response);
+  return bot($request->getParsedBody(), $response);
 });
 
 // Run Slim server
