@@ -22,7 +22,7 @@ function bot ($body, $response = NULL) {
   */
   $connect = new RecastAI\Connect($config['recast']['token'], $config['recast']['language']);
 
-  $connect->connect->handleMessage(['body' => $body], $response ? $response : [], 'replyMessage');
+  $connect->handleMessage(['body' => $body], $response ? $response : [], 'replyMessage');
 
   return $response;
 }

@@ -22,7 +22,7 @@ function replyMessage ($message) {
   /*
    * Call Recast.AI SDK, through /converse route
    */
-  $response = $request->converse->textConverse($text, $senderId);
+  $response = $request->converseText($text, $senderId);
 
   /*
    * Here, you can add your own process.
