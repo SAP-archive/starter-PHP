@@ -6,6 +6,8 @@
  * The Recast.AI SDK will handle message and call your reply bot function
  */
 
+use RecastAI\Client;
+
 /*
  * Import your reply bot function (replyMessage)
  */
@@ -20,7 +22,7 @@ function bot ($body, $response = NULL) {
   /*
   * Instantiate Recast.AI SDK, just for connect service
   */
-  $connect = new RecastAI\Connect($config['recast']['token'], $config['recast']['language']);
+  $connect = Client::Connect($config['recast']['token'], $config['recast']['language']);
 
   $connect->handleMessage(['body' => $body], $response ? $response : [], 'replyMessage');
 

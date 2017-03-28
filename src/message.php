@@ -1,4 +1,7 @@
 <?php
+
+use RecastAI\Client;
+
 /*
  * message.js
  * This file contains your bot code
@@ -7,7 +10,7 @@ function replyMessage ($message) {
   /*
    * Instantiate Recast.AI SDK, just for connect service
    */
-  $request = new RecastAI\Request($config['recast']['token']);
+  $request = Client::Request($config['recast']['token']);
 
   /*
    * Get text from message received
