@@ -8,6 +8,8 @@
 
 use RecastAI\Client;
 
+require_once 'config.php';
+
 /*
  * Import your reply bot function (replyMessage)
  */
@@ -22,9 +24,9 @@ function bot ($body, $response = NULL) {
   /*
   * Instantiate Recast.AI SDK, just for connect service
   */
-  $connect = Client::Connect($config['recast']['token'], $config['recast']['language']);
+  $connect = Client::Connect($_ENV["REQUEST_TOKEN"], $_ENV["LANGUAGE"]);
 
-  $connect->handleMessage(['body' => $body], $response ? $response : [], 'replyMessage');
+  $connect->handleMessage($body, 'replyMessage');
 
   return $response;
 }
