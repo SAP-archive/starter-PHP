@@ -29,7 +29,10 @@ function replyMessage ($message) {
   */
   $response = $request->analyseText($text);
 
-  $intent = $response->intents[0];
+  $intent = null;
+  if (count($response->intents) > 0) {
+	  $intent = $response->intents[0];
+  }
 
   $intent_slug = null;
   if ($intent) {
