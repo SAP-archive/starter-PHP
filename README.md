@@ -67,7 +67,6 @@ Code | Documentation
 Receiving messages | [The Recast.AI SDK](https://github.com/RecastAI/SDK-PHP/wiki) - connect
 Sending messages | [The Recast.AI SDK](https://github.com/RecastAI/SDK-PHP/wiki) - connect
 Rich messaging | See the different [payload message](https://man.recast.ai)
-Manage the conversation | [The Recast.AI SDK](https://github.com/RecastAI/SDK-PHP/wiki) - converse
 
 ## More
 
