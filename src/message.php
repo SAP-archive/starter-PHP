@@ -13,8 +13,8 @@ function replyMessage ($message) {
   * Instantiate Recast.AI SDK, just for connect service
   */
   $request = Client::Request($_ENV["REQUEST_TOKEN"]);
-
   /*
+
   * Get text from message received
   */
   $text = $message->content;
@@ -27,7 +27,22 @@ function replyMessage ($message) {
   /*
   * Call Recast.AI SDK, through /converse route
   */
-  $response = $request->converseText($text, [ 'conversation_token' => $senderId ]);
+  $response = $request->analyseText($text);
+
+  $intent = null;
+  if (count($response->intents) > 0) {
+	  $intent = $response->intents[0];
+  }
+
+  $intent_slug = null;
+  if ($intent) {
+    $intent_slug = $intent->slug;
+  }
+
+  $reply = "I'm sorry but I don't understand what you are talking about";
+  if ($intent_slug !== null) {
+    $reply = "I understand that you talk about " . $intent_slug;
+  }
 
   /*
   * Here, you can add your own process.
@@ -39,9 +54,7 @@ function replyMessage ($message) {
   /*
   * Add each replies received from API to replies stack
   */
-  foreach ($response->replies as $reply) {
-    $message->addReply([(object)['type' => 'text', 'content' => $reply]]);
-  }
+  $message->addReply([(object)['type' => 'text', 'content' => $reply]]);
 
   $message->reply();
 }
